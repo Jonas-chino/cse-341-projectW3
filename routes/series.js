@@ -1,6 +1,6 @@
 const express = require('express');
 const router = require('express').Router()
-const moviesController = require('../controllers/series');
+const seriesController = require('../controllers/series');
 
 // Rutas completas del CRUD para la colección 'series'
 router.get('/', seriesController.getAll);

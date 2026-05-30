@@ -3,7 +3,6 @@ const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
     //#swagger.tags=['Movies']
-    // Nota: Cambia 'entertainment_api' por el nombre exacto de tu nueva base de datos en MongoDB si es diferente.
     const result = await mongodb.getDatabase().db('entertainment_api').collection('movies').find();
     result.toArray().then((movies) => {
         res.setHeader('Content-Type', 'application/json');
@@ -36,7 +35,7 @@ const createMovie = async (req, res) => {
     const response = await mongodb.getDatabase().db('entertainment_api').collection('movies').insertOne(movie);
     
     if (response.acknowledged) {
-        res.status(201).json(response); // 201 significa "Creado"
+        res.status(201).json(response); 
     } else {
         res.status(500).json(response.error || 'Ocurrió un error al crear la película.');
     }

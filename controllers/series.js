@@ -37,7 +37,7 @@ const createSeries = async (req, res) => {
     const response = await mongodb.getDatabase().db('entertainment_api').collection('series').insertOne(newSeries);
     
     if (response.acknowledged) {
-        res.status(201).json(response); // 201 = Creado exitosamente
+        res.status(201).json(response); 
     } else {
         res.status(500).json(response.error || 'Ocurrió un error al crear la serie.');
     }
@@ -59,7 +59,7 @@ const updateSeries = async (req, res) => {
     const response = await mongodb.getDatabase().db('entertainment_api').collection('series').replaceOne({ _id: seriesId }, updatedSeries);
     
     if (response.modifiedCount > 0) {
-        res.status(204).send(); // 204 = Sin contenido (Actualizado con éxito)
+        res.status(204).send(); // 
     } else {
         res.status(500).json(response.error || 'Ocurrió un error al actualizar la serie.');
     }
