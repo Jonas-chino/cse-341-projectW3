@@ -1,0 +1,28 @@
+{
+  "name": "cse-341-projectw3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jonas Chino",
+  "license": "ISC",
+  "description": "BYUI project week3-4",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonas-chino/cse-341-projectW3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jonas-chino/cse-341-projectW3/issues"
+  },
+  "homepage": "https://github.com/Jonas-chino/cse-341-projectW3#readme"
+}
