@@ -3,7 +3,7 @@ router.use('/', require('./swagger'));
 
 router.get('/', (req , res) => {
     //res.send('hello world');});
-    res.send('PROJECT API WEEK 3 and ');
+    res.send('welcome to API project 3 and 4 ');
 })
 
 router.use('/movies', require('./movies'));
