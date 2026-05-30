@@ -5,7 +5,7 @@
 ### Obtener todas las películas
 GET http://localhost:3000/movies
 
-### Obtener una película específica por ID (Cambia el ID por uno real de tu base de datos)
+### Obtener una película específica por ID 
 GET http://localhost:3000/movies/6a1b5212b014c501eea3ce3e
 
 ### Crear una nueva película
@@ -23,8 +23,8 @@ Content-Type: application/json
     "hasWonOscars": true
 }
 
-### Actualizar una película (Cambia el ID)
-PUT http://localhost:3000/movies/AQUI_PON_UN_ID_REAL
+### Actualizar una película 
+PUT http://localhost:3000/movies/6a1b5212b014c501eea3ce3e
 Content-Type: application/json
 
 {
@@ -38,15 +38,15 @@ Content-Type: application/json
     "hasWonOscars": true
 }
 
-### Eliminar una película (Cambia el ID)
-DELETE http://localhost:3000/movies/AQUI_PON_UN_ID_REAL
+### Eliminar una película
+DELETE http://localhost:3000/movies/6a1b5212b014c501eea3ce3e
 
 // ==========================================
 
 ### Obtener todas las series
 GET http://localhost:3000/series
 ##new
-### get ome by ID
+### Obtener una serie por ID
 GET http://localhost:3000/series/6a1b47a2234cd6e483f9586e
 
 

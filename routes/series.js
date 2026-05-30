@@ -2,7 +2,7 @@ const express = require('express');
 const router = require('express').Router()
 const seriesController = require('../controllers/series');
 
-// Rutas completas del CRUD para la colección 'series'
+
 router.get('/', seriesController.getAll);
 router.get('/:id', seriesController.getSingle);
 router.post('/', seriesController.createSeries);
