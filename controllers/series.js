@@ -4,7 +4,6 @@ const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
     //#swagger.tags=['Series']
-    // Asegúrate de que el nombre 'entertainment_api' coincida con tu base de datos
     const result = await mongodb.getDatabase().db('entertainment_api').collection('series').find();
     result.toArray().then((series) => {
         res.setHeader('Content-Type', 'application/json');
