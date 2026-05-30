@@ -1,0 +1,65 @@
+// ==========================================
+// RUTAS LOCALES (Pruebas de desarrollo)
+// ==========================================
+
+### Obtener todas las películas
+GET http://localhost:3000/movies
+
+### Obtener una película específica por ID (Cambia el ID por uno real de tu base de datos)
+GET http://localhost:3000/movies/6a1b5212b014c501eea3ce3e
+
+### Crear una nueva película
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "title": "Toy Story",
+    "director": "Pixar",
+    "releaseYear": 2026,
+    "genre": "family",
+    "rating": "PG-13",
+    "runtimeMinutes": 169,
+    "boxOfficeMillions": 701.8,
+    "hasWonOscars": true
+}
+
+### Actualizar una película (Cambia el ID)
+PUT http://localhost:3000/movies/AQUI_PON_UN_ID_REAL
+Content-Type: application/json
+
+{
+    "title": "Interstellar (Director's Cut)",
+    "director": "Christopher Nolan",
+    "releaseYear": 2014,
+    "genre": "Sci-Fi",
+    "rating": "PG-13",
+    "runtimeMinutes": 180,
+    "boxOfficeMillions": 701.8,
+    "hasWonOscars": true
+}
+
+### Eliminar una película (Cambia el ID)
+DELETE http://localhost:3000/movies/AQUI_PON_UN_ID_REAL
+
+// ==========================================
+
+### Obtener todas las series
+GET http://localhost:3000/series
+##new
+### get ome by ID
+GET http://localhost:3000/series/6a1b47a2234cd6e483f9586e
+
+
+### Crear una nueva serie
+POST http://localhost:3000/series
+Content-Type: application/json
+
+{
+    "title": "Breaking Bad",
+    "creator": "Vince Gilligan",
+    "releaseYear": 2008,
+    "totalSeasons": 5,
+    "totalEpisodes": 62,
+    "network": "AMC",
+    "isCurrentlyAiring": false
+}
