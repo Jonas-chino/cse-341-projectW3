@@ -1,9 +1,9 @@
 const router = require('express').Router();
-///router.use('/', require('./swagger'));
+router.use('/', require('./swagger'));
 
 router.get('/', (req , res) => {
     //res.send('hello world');});
-    res.send('hello world');
+    res.send('PROJECT API WEEK 3 and ');
 })
 
 router.use('/movies', require('./movies'));
